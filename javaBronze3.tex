@@ -340,5 +340,134 @@ public  class Main{
         System.out.println( args[1] + " hello");
     }
 }
+%% page.261.
 
-\end{document}
+次のコードをコンパイルし、実行方法の通りに実行した時の結果として、正しいものを選びなさい。
+（1つ選択）
+
+public class Main {
+    public static void main( String [] args){
+        System.out.println( args[1] + " hello");
+    }
+}
+
+【実行方法】
+
+java Main hoge fuga
+
+Main hello
+hoge hello
+fuga hello
+Main fuga hello
+
+%% page 261
+
+次のコードをコンパイルし、実行した時のけっかとして、正しいものを選びなさい。
+（1つ選択）
+
+
+public  class Main{
+    public static void  main( String[] args ){
+        int i = 4;
+        while( i >= 0 ) 
+            System.out.print( ( i--) + " ");
+    }
+}
+
+「4321」と表示される。
+「43210」と表示される
+「321」と表示される
+「43210」と表示される
+「4」が無限に表示される
+「3」が無限に表示される
+
+
+%%　page.262
+
+適切にカプセル化し、維持するために必要な修飾子として、正しいものを選びなさい
+（1つ選択）
+
+final
+abstract
+public
+private 
+
+%% page 263
+
+次のコードをコンパイル、実行した時の結果として、正しいものを選びなさい。
+（1つ選択）
+
+public class ArrayTest{
+    public  static void main( String[] args){
+        char [] chars1 = new char[6];
+        chars1[0]='b'
+        chars[1]='o';
+        chars[2]='o';
+        chars[3]='k';
+        
+        char[] chars2 = { 'l', 'i', 'b', 'r', 'a', 'r', 'y'}
+        chars1 = chars2;
+
+        System.out.println( chars1);
+    }
+}
+「book」と表示される
+「bookary」と表示される
+「librar」と表示される
+「library」と表示される
+コンパイルエラーになる
+実行時に例外が発生する
+
+以下の中から、情報隠蔽にかかわりの深いキーワードを選びなさい。
+（二つ選択）
+
+ポリモーフィズム
+カプセル化
+アクセサメソッド
+パッケージ
+インタフェース
+インスタンス化
+
+%% 263
+
+以下の中から、情報隠蔽にかかわりの深いキーワードを選びなさい。
+（3つ選択）
+
+ポリモーフィズム
+カプセル化
+アクセサメソッド
+パッケージ
+インタフェース
+インスタンス化
+
+%% page 264
+
+次のコードをコンパイル、実行した時の結果として、正しいものを選びなさい。
+（1つ選択）
+
+public class Item {
+    public static void main( String[] args){
+        Item[] items = { new Item(), new Item(), new Item()};
+        int u = items.length;
+        do while( u > 0 ){
+            System.out.println( u -- + " ");
+        }
+    }
+}
+
+「321」と表示される
+「210」と表示される
+「21」と表示される
+3行目でコンパイルエラーとなる
+5から7行目のdo~whileブロックでコンパイルエラーとなる
+
+%% Q.32
+
+クロスの定義として正しいものを選びなさい。
+（3つ選択）
+public class $Item { }
+public class Book%{ }
+public class Employee#{ }
+class Shape5{ }
+class Sample-Test{}
+class Book_Stop{}
