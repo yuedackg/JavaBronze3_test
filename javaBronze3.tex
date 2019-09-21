@@ -1,9 +1,115 @@
 \documentclass[12pt]{jarticle}
-\usepackage{listings}
-\usepackage{qexam}
 
 \begin{document}
+
 次のコードをコンパイル、実行した時の結果として、正しいものを選びなさい。
+
+
+何も表示されない。
+「56789」と1回表示される
+「56789」と5回表示される
+コンパイルエラーになる。
+実行時に例外が発生する。
+
+次のSampleクラスを継承したサブクラスを定義するときに、
+サブクラスに定義したメソッドのうち、Sampleクラスのメソッドを正しくオーバーライドしているものを選びなさい。
+
+
+public void  methodA(){}
+public  void methodB( long a ){}
+public int methodC( char a, int b){return 0;}
+public int methodD( int i ){return 1;}
+
+次のコードをコンパイル、実行した時の結果として、正しいものを選びなさい。（1つ選択）
+
+「none aline」と表示される
+「null aline」と表示される
+「aline aline」と表示される
+コンパイルエラーになる
+実行時に例外が発生する
+
+ある企業は、GUIベースのアプリケーション開発を希望しており、将来的な拡張として、
+Webベースのアプリケーションへの移行を予定している。
+このアプリケーションを作成するには、どのJavaテクノロジを使用するのが良いか。
+正しいものを選びなさい。（1つ選択）
+
+Java SE
+Java ME
+Java EE
+Java DB
+
+次のプログラムをコンパイル、実行した時の結果として、
+正しいものを選びなさい。（1つ選択）
+
+public interface Sample {
+    void test();
+}
+
+public class A implements Sample{
+    public void test(){
+        System.out.println( "A");
+    }
+}
+
+public class B extends A {
+    public void test(){
+        System.out.println( "B");
+    }
+}
+
+public class Main{
+    public  static void main( String[] args){
+        Sample[] samples = { new A(), new B()};
+        for ( Sample s : samples){
+            a.test();
+        }
+    }
+}
+
+
+「A」「B」の順に表示される
+「B」「A」の順に表示される
+「A」「A」の順に表示される
+「B」「B」の順に表示される
+Bクラスでコンパイルエラーが発生する
+Mainクラスでコンパイルエラーが発生する
+
+次のコードをコンパイル、実行した時の結果として、正しいものを選びなさい。（1つ選択））
+
+public  class P249 {
+    public  static void main( String[] args){
+        int i = 5;
+        System.out.println((i += 5 ) + ":" + ( i--));
+    }
+}
+
+「5:5」と表示される
+「5:4」と1回表示される
+「5:9」と表示される
+「10:10」と表示される
+「10:9」と表示される
+
+以下の中から、アクセス修飾子privateで修飾
+できるものを選びなさい。
+（3つ選択）
+
+インタフェースのフィールド
+クラスのコンストラクタ
+クラスのフィールド
+クラスの抽象メソッド
+インタフェースのメソッド
+クラスの具象メソッド
+
+次のコードのコンパイルを成功させ、実行結果が「Refresh L」となるようにしたい。
+空欄にあてはまるコードを選びなさい。
+（1つ選択）
+
+
+%% p250.java
+
+
+
+
 
 
 
