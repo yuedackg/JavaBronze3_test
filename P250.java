@@ -12,7 +12,6 @@ public class P250{
     void printInfo(){
         System.out.println( title + " " + size);
     }
-
     public static void main( String[] args){
         P250 p = new P250( );
         p.printInfo();
